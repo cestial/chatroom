@@ -1,0 +1,9 @@
+<template name="list">
+  <div id="list-container">
+    <ul>
+    {{#each users}}
+      <li class="user {{#if isCurUser}}highlight{{/if}}">{{username}}</li>
+    {{/each}}
+    </ul>
+  </div>
+</template>
