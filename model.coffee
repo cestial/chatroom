@@ -1,3 +1,4 @@
+#publish and subscribe management
 if Meteor.isServer
   Meteor.publish "allUserData", ->
     Meteor.users.find({},{fields:{username:1}})
